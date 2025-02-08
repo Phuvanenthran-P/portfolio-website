@@ -6,41 +6,78 @@
     <title>Phuvanenthran P - Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Phuvanenthran P</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Phuvanenthran P</h2>
+                <p>Data Analyst</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item active"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-item"><i class="fas fa-user"></i> About</a>
+                <a href="skills.html" class="nav-item"><i class="fas fa-code"></i> Skills</a>
+                <a href="projects.html" class="nav-item"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="resume.html" class="nav-item"><i class="fas fa-file-alt"></i> Resume</a>
+                <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a>
             </nav>
+            <div class="sidebar-footer">
+                <a href="https://github.com/Phuvanenthran-P" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/phuvanenthran-p-316a53287/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
         </div>
-    </header>
-    
-    <section class="hero">
-        <div class="container">
-            <h2>Hello, I'm <span>Phuvanenthran P</span></h2>
-            <p>A passionate <strong>Data Analyst</strong> skilled in SQL, Python, and AWS Cloud.</p>
-            <p>Dedicated to transforming raw data into meaningful insights.</p>
-            <a href="resume.html" class="btn">Download Resume</a>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="chat-message ai-message">
+                    <div class="message-content">
+                        <h2>Hello! I'm Phuvanenthran P</h2>
+                        <p>Data Analyst specializing in transforming complex data into actionable insights.</p>
+                        <div class="skills-grid">
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">AWS</div>
+                            <div class="skill-tag">Power BI</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-message user-message">
+                    <div class="message-content">
+                        <h3>Featured Projects</h3>
+                        <div class="project-card">
+                            <div class="project-header">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Real-Time Stock Dashboard</h4>
+                            </div>
+                            <p>Python-based stock market analysis dashboard using yFinance and Plotly.</p>
+                            <a href="https://github.com/Phuvanenthran-P/Projects/blob/main/Real_Time_Stock_Market_Dashboard.ipynb" 
+                               class="project-link" target="_blank">
+                               View Project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="resume.pdf" download class="action-btn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="contact.html" class="action-btn">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+            </div>
         </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>Contact: <a href="mailto:phuvan0205@gmail.com">phuvan0205@gmail.com</a> | 
-            <a href="https://www.linkedin.com/in/phuvanenthran-p-316a53287/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
-            <a href="https://github.com/Phuvanenthran-P" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
-        </div>
-    </footer>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
