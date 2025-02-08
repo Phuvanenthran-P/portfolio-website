@@ -1,19 +1,56 @@
-<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Phuvanenthran P</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Projects</h1>
+        <div class="container">
+            <h1>Projects</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section>
-        <ul>
-            <li><a href="https://github.com/Phuvanenthran-P/Projects/blob/main/Real_Time_Stock_Market_Dashboard.ipynb">Real-Time Stock Market Dashboard</a></li>
-            <li><a href="https://github.com/Phuvanenthran-P/Projects/blob/main/Phone_Usage_Analysis.ipynb">Phone Usage Analysis in India</a></li>
-        </ul>
+    
+    <section class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Real-Time Stock Market Dashboard</h3>
+                    <p>Developed a live stock tracking dashboard using Python, Plotly, and yFinance.</p>
+                    <a href="https://github.com/Phuvanenthran-P/Projects/blob/main/Real_Time_Stock_Market_Dashboard.ipynb" class="btn" target="_blank">View Project</a>
+                </div>
+                <div class="project-item">
+                    <h3>Phone Usage Analysis in India</h3>
+                    <p>Analyzed mobile usage behavior and data trends using Python and Seaborn.</p>
+                    <a href="https://github.com/Phuvanenthran-P/Projects/blob/main/Phone_Usage_Analysis.ipynb" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    <footer>
+        <div class="container">
+            <p>Contact: <a href="mailto:phuvan0205@gmail.com">phuvan0205@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/phuvanenthran-p-316a53287/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
+            <a href="https://github.com/Phuvanenthran-P" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
