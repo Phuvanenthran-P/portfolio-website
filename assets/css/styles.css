@@ -18,6 +18,10 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -45,11 +49,13 @@ nav ul li a:hover {
     background: linear-gradient(to right, #007bff, #00c6ff);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.hero h2 span {
-    color: #ffcc00;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .btn {
@@ -61,11 +67,12 @@ nav ul li a:hover {
     font-weight: bold;
     margin-top: 20px;
     border-radius: 5px;
-    transition: back-ground 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .btn:hover {
     background: #ffa500;
+    transform: scale(1.05);
 }
 
 footer {
@@ -76,166 +83,20 @@ footer {
     margin-top: 20px;
 }
 
-
-/* CSS (assets/css/styles.css) */
-.about {
-    text-align: center;
-    padding: 60px 20px;
-    background: #fff;
+/* Dark Mode Toggle */
+.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
 }
 
-.about h2 {
-    font-size: 2em;
-    color: #007bff;
+.dark-mode header, .dark-mode footer {
+    background-color: #333;
 }
 
-.about p {
-    font-size: 1.2em;
-    margin: 10px 0;
+.dark-mode nav ul li a {
+    color: #f4f4f4;
 }
 
-.btn {
-    display: inline-block;
-    background: #ffcc00;
-    color: #222;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: back-ground 0.3s;
-}
-
-.btn:hover {
-    background: #ffa500;
-}
-
-/* CSS (assets/css/styles.css) */
-.skills {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f8f9fa;
-}
-
-.skills h2 {
-    font-size: 2em;
-    color: #007bff;
-}
-
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills ul li {
-    font-size: 1.2em;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.skills ul li i {
-    color: #007bff;
-    font-size: 1.5em;
-}
-
-/* CSS (assets/css/styles.css) */
-.projects {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f8f9fa;
-}
-
-.projects h2 {
-    font-size: 2em;
-    color: #007bff;
-}
-
-.project-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.project-item {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
-}
-
-.project-item h3 {
-    color: #333;
-}
-
-.btn {
-    display: inline-block;
-    background: #ffcc00;
-    color: #222;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-    border-radius: 5px;
-    transition: back-ground 0.3s;
-}
-
-.btn:hover {
-    background: #ffa500;
-}
-
-/* CSS (assets/css/styles.css) */
-.resume {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f8f9fa;
-}
-
-.resume h2 {
-    font-size: 2em;
-    color: #007bff;
-}
-
-.btn {
-    display: inline-block;
-    background: #ffcc00;
-    color: #222;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: back-ground 0.3s;
-}
-
-.btn:hover {
-    background: #ffa500;
-}
-
-/* CSS (assets/css/styles.css) */
-.contact {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f8f9fa;
-}
-
-.contact h2 {
-    font-size: 2em;
-    color: #007bff;
-}
-
-.contact-details p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.contact-details i {
-    color: #007bff;
-    margin-right: 10px;
-    font-size: 1.5em;
+.dark-mode nav ul li a:hover {
+    color: #ffcc00;
 }
